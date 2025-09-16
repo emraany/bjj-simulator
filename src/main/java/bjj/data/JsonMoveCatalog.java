@@ -16,8 +16,6 @@ public final class JsonMoveCatalog implements MoveCatalog {
             for (MoveCatalogLoader.MoveDTO dto : cat.moves) {
                 Position from = Position.valueOf(dto.from);
 
-                // Handle "END" specially: submissions end the match instead of mapping to a
-                // position
                 Position to = null;
                 if (dto.outcomes != null && dto.outcomes.success != null && dto.outcomes.success.to != null) {
                     if (!"END".equals(dto.outcomes.success.to)) {
@@ -27,7 +25,6 @@ public final class JsonMoveCatalog implements MoveCatalog {
 
                 MoveFamily fam = MoveFamily.valueOf(dto.family);
 
-                // Difficulty derived from success probability
                 int difficulty = (int) Math.round(100 - (dto.prob.success * 100));
 
                 Move move = new Move(
