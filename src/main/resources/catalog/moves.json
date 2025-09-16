@@ -1309,6 +1309,157 @@
       "points": 2,
       "tags": ["scramble"],
       "duration": { "min": 4, "max": 10 }
-    }
+    },
+      {
+    "id": "transition.side_to_kob",
+    "name": "Side to Knee-on-Belly",
+    "family": "TRANSITION",
+    "from": "SIDE_CONTROL_TOP",
+    "prob": { "success": 0.65, "partial": 0.20 },
+    "outcomes": {
+      "success": { "to": "KNEE_ON_BELLY_TOP" },
+      "partial": { "to": "SIDE_CONTROL_TOP" },
+      "fail": { "to": "SIDE_CONTROL_BOTTOM" }
+    },
+    "points": 0,
+    "tags": ["pressure","mobility"],
+    "duration": { "min": 2, "max": 6 }
+  },
+  {
+    "id": "transition.mount_to_side_disengage",
+    "name": "Mount to Side Control (Disengage)",
+    "family": "TRANSITION",
+    "from": "MOUNT_TOP",
+    "prob": { "success": 0.58, "partial": 0.22 },
+    "outcomes": {
+      "success": { "to": "SIDE_CONTROL_TOP" },
+      "partial": { "to": "KNEE_ON_BELLY_TOP" },
+      "fail": { "to": "MOUNT_BOTTOM" }
+    },
+    "points": 0,
+    "tags": ["control"],
+    "duration": { "min": 3, "max": 7 }
+  },
+  {
+    "id": "transition.mount_knee_slide_kob",
+    "name": "Knee Slide to Knee-on-Belly",
+    "family": "TRANSITION",
+    "from": "MOUNT_TOP",
+    "prob": { "success": 0.62, "partial": 0.20 },
+    "outcomes": {
+      "success": { "to": "KNEE_ON_BELLY_TOP" },
+      "partial": { "to": "SIDE_CONTROL_TOP" },
+      "fail": { "to": "MOUNT_BOTTOM" }
+    },
+    "points": 0,
+    "tags": ["mobility"],
+    "duration": { "min": 2, "max": 6 }
+  },
+  {
+    "id": "transition.half_to_mount",
+    "name": "Crossface to Mount",
+    "family": "TRANSITION",
+    "from": "HALF_GUARD_TOP",
+    "prob": { "success": 0.48, "partial": 0.28 },
+    "outcomes": {
+      "success": { "to": "MOUNT_TOP" },
+      "partial": { "to": "SIDE_CONTROL_TOP" },
+      "fail": { "to": "HALF_GUARD_BOTTOM" }
+    },
+    "points": 0,
+    "tags": ["pressure"],
+    "duration": { "min": 4, "max": 10 }
+  },
+  {
+    "id": "transition.open_to_back",
+    "name": "Open Guard Back Take (Leg Drag Spin)",
+    "family": "TRANSITION",
+    "from": "OPEN_GUARD_TOP",
+    "prob": { "success": 0.38, "partial": 0.28 },
+    "outcomes": {
+      "success": { "to": "BACK_CONTROL_TOP" },
+      "partial": { "to": "SIDE_CONTROL_TOP" },
+      "fail": { "to": "OPEN_GUARD_BOTTOM" }
+    },
+    "points": 0,
+    "tags": ["speed"],
+    "duration": { "min": 3, "max": 8 }
+  },
+  {
+    "id": "submission.ezekiel_mount_top",
+    "name": "Ezekiel from Mount (Top)",
+    "family": "SUBMISSION",
+    "from": "MOUNT_TOP",
+    "prob": { "success": 0.28, "partial": 0.30 },
+    "outcomes": {
+      "success": { "to": "END" },
+      "partial": { "to": "MOUNT_TOP" },
+      "fail": { "to": "MOUNT_BOTTOM" }
+    },
+    "points": 0,
+    "tags": ["gi","pressure"],
+    "duration": { "min": 5, "max": 12 }
+  },
+  {
+    "id": "submission.mounted_triangle",
+    "name": "Mounted Triangle",
+    "family": "SUBMISSION",
+    "from": "MOUNT_TOP",
+    "prob": { "success": 0.27, "partial": 0.28 },
+    "outcomes": {
+      "success": { "to": "END" },
+      "partial": { "to": "SIDE_CONTROL_TOP" },
+      "fail": { "to": "MOUNT_BOTTOM" }
+    },
+    "points": 0,
+    "tags": ["nogi","gi"],
+    "duration": { "min": 6, "max": 14 }
+  },
+  {
+    "id": "submission.north_south_kimura",
+    "name": "Kimura from North-South",
+    "family": "SUBMISSION",
+    "from": "NORTH_SOUTH_TOP",
+    "prob": { "success": 0.29, "partial": 0.28 },
+    "outcomes": {
+      "success": { "to": "END" },
+      "partial": { "to": "SIDE_CONTROL_TOP" },
+      "fail": { "to": "SIDE_CONTROL_BOTTOM" }
+    },
+    "points": 0,
+    "tags": ["gi","nogi","kimura"],
+    "duration": { "min": 5, "max": 12 }
+  },
+  {
+    "id": "submission.rear_triangle",
+    "name": "Rear Triangle",
+    "family": "SUBMISSION",
+    "from": "BACK_CONTROL_TOP",
+    "prob": { "success": 0.31, "partial": 0.27 },
+    "outcomes": {
+      "success": { "to": "END" },
+      "partial": { "to": "BACK_CONTROL_TOP" },
+      "fail": { "to": "BACK_CONTROL_BOTTOM" }
+    },
+    "points": 0,
+    "tags": ["nogi","gi"],
+    "duration": { "min": 6, "max": 14 }
+  },
+  {
+    "id": "transition.kob_spin_to_back",
+    "name": "KOB Spin to Back",
+    "family": "TRANSITION",
+    "from": "KNEE_ON_BELLY_TOP",
+    "prob": { "success": 0.46, "partial": 0.26 },
+    "outcomes": {
+      "success": { "to": "BACK_CONTROL_TOP" },
+      "partial": { "to": "SIDE_CONTROL_TOP" },
+      "fail": { "to": "SIDE_CONTROL_BOTTOM" }
+    },
+    "points": 0,
+    "tags": ["mobility"],
+    "duration": { "min": 3, "max": 8 }
+  }
+
   ]
 }
