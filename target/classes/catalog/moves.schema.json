@@ -1,0 +1,95 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "BJJ Moves Catalog Schema v1",
+  "type": "object",
+  "required": ["version", "moves"],
+  "properties": {
+    "version": { "type": "string" },
+    "moves": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/Move" }
+    }
+  },
+  "$defs": {
+    "Position": {
+      "type": "string",
+      "enum": [
+        "STANDING",
+        "CLOSED_GUARD_TOP", "CLOSED_GUARD_BOTTOM",
+        "OPEN_GUARD_TOP", "OPEN_GUARD_BOTTOM",
+        "HALF_GUARD_TOP", "HALF_GUARD_BOTTOM",
+        "SIDE_CONTROL_TOP", "SIDE_CONTROL_BOTTOM",
+        "MOUNT_TOP", "MOUNT_BOTTOM",
+        "BACK_CONTROL_TOP", "BACK_CONTROL_BOTTOM",
+        "TURTLE_TOP", "TURTLE_BOTTOM",
+        "KNEE_ON_BELLY_TOP", "KNEE_ON_BELLY_BOTTOM",
+        "NORTH_SOUTH_TOP", "NORTH_SOUTH_BOTTOM"
+      ]
+    },
+    "Family": {
+      "type": "string",
+      "enum": ["ENTRY", "PASS", "SWEEP", "ESCAPE", "TRANSITION", "SUBMISSION"]
+    },
+    "Outcome": {
+      "type": "object",
+      "required": ["to"],
+      "properties": {
+        "to": {
+          "anyOf": [
+            { "$ref": "#/$defs/Position" },
+            { "const": "END" }
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "Duration": {
+      "type": "object",
+      "required": ["min", "max"],
+      "properties": {
+        "min": { "type": "integer", "minimum": 1 },
+        "max": { "type": "integer", "minimum": 1 }
+      },
+      "allOf": [
+        { "properties": { "max": { "minimum": 1 } } }
+      ],
+      "additionalProperties": false
+    },
+    "Move": {
+      "type": "object",
+      "required": [
+        "id", "name", "family", "from", "prob", "outcomes", "duration"
+      ],
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9_.-]+$" },
+        "name": { "type": "string", "minLength": 1 },
+        "family": { "$ref": "#/$defs/Family" },
+        "from": { "$ref": "#/$defs/Position" },
+        "prob": {
+          "type": "object",
+          "required": ["success", "partial"],
+          "properties": {
+            "success": { "type": "number", "minimum": 0, "maximum": 1 },
+            "partial": { "type": "number", "minimum": 0, "maximum": 1 }
+          },
+          "additionalProperties": false
+        },
+        "outcomes": {
+          "type": "object",
+          "required": ["success", "fail"],
+          "properties": {
+            "success": { "$ref": "#/$defs/Outcome" },
+            "partial": { "$ref": "#/$defs/Outcome" },
+            "fail": { "$ref": "#/$defs/Outcome" }
+          },
+          "additionalProperties": false
+        },
+        "points": { "type": "integer", "minimum": 0, "default": 0 },
+        "tags": { "type": "array", "items": { "type": "string" }, "default": [] },
+        "duration": { "$ref": "#/$defs/Duration" }
+      },
+      "additionalProperties": false
+    }
+  }
+}

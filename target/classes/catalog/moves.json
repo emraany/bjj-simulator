@@ -1,0 +1,1314 @@
+{
+  "version": "1.2.0",
+  "moves": [
+    {
+      "id": "entry.double_leg",
+      "name": "Double Leg",
+      "family": "ENTRY",
+      "from": "STANDING",
+      "prob": { "success": 0.55, "partial": 0.15 },
+      "outcomes": {
+        "success": { "to": "SIDE_CONTROL_TOP" },
+        "partial": { "to": "HALF_GUARD_TOP" },
+        "fail": { "to": "STANDING" }
+      },
+      "points": 2,
+      "tags": ["wrestling"],
+      "duration": { "min": 4, "max": 10 }
+    },
+    {
+      "id": "entry.pull_closed",
+      "name": "Pull to Closed Guard",
+      "family": "ENTRY",
+      "from": "STANDING",
+      "prob": { "success": 0.70, "partial": 0.10 },
+      "outcomes": {
+        "success": { "to": "CLOSED_GUARD_BOTTOM" },
+        "partial": { "to": "OPEN_GUARD_BOTTOM" },
+        "fail": { "to": "STANDING" }
+      },
+      "points": 0,
+      "tags": ["gi"],
+      "duration": { "min": 2, "max": 6 }
+    },
+    {
+      "id": "entry.snatch_single",
+      "name": "Snatch Single",
+      "family": "ENTRY",
+      "from": "STANDING",
+      "prob": { "success": 0.50, "partial": 0.20 },
+      "outcomes": {
+        "success": { "to": "SIDE_CONTROL_TOP" },
+        "partial": { "to": "HALF_GUARD_TOP" },
+        "fail": { "to": "STANDING" }
+      },
+      "points": 2,
+      "tags": ["wrestling","nogi"],
+      "duration": { "min": 3, "max": 9 }
+    },
+    {
+      "id": "entry.ankle_pick",
+      "name": "Ankle Pick",
+      "family": "ENTRY",
+      "from": "STANDING",
+      "prob": { "success": 0.48, "partial": 0.22 },
+      "outcomes": {
+        "success": { "to": "OPEN_GUARD_TOP" },
+        "partial": { "to": "HALF_GUARD_TOP" },
+        "fail": { "to": "STANDING" }
+      },
+      "points": 2,
+      "tags": ["wrestling"],
+      "duration": { "min": 3, "max": 8 }
+    },
+
+    {
+      "id": "entry.uchi_mata",
+      "name": "Uchi Mata",
+      "family": "ENTRY",
+      "from": "STANDING",
+      "prob": { "success": 0.46, "partial": 0.22 },
+      "outcomes": {
+        "success": { "to": "SIDE_CONTROL_TOP" },
+        "partial": { "to": "HALF_GUARD_TOP" },
+        "fail": { "to": "STANDING" }
+      },
+      "points": 2,
+      "tags": ["judo","gi"],
+      "duration": { "min": 3, "max": 9 }
+    },
+    {
+      "id": "entry.o_soto_gari",
+      "name": "O Soto Gari",
+      "family": "ENTRY",
+      "from": "STANDING",
+      "prob": { "success": 0.48, "partial": 0.22 },
+      "outcomes": {
+        "success": { "to": "SIDE_CONTROL_TOP" },
+        "partial": { "to": "HALF_GUARD_TOP" },
+        "fail": { "to": "STANDING" }
+      },
+      "points": 2,
+      "tags": ["judo","gi"],
+      "duration": { "min": 3, "max": 9 }
+    },
+    {
+      "id": "entry.o_uchi_gari",
+      "name": "O Uchi Gari",
+      "family": "ENTRY",
+      "from": "STANDING",
+      "prob": { "success": 0.47, "partial": 0.22 },
+      "outcomes": {
+        "success": { "to": "SIDE_CONTROL_TOP" },
+        "partial": { "to": "HALF_GUARD_TOP" },
+        "fail": { "to": "STANDING" }
+      },
+      "points": 2,
+      "tags": ["judo","gi"],
+      "duration": { "min": 3, "max": 9 }
+    },
+    {
+      "id": "entry.ippon_seoi_nage",
+      "name": "Ippon Seoi Nage",
+      "family": "ENTRY",
+      "from": "STANDING",
+      "prob": { "success": 0.46, "partial": 0.22 },
+      "outcomes": {
+        "success": { "to": "SIDE_CONTROL_TOP" },
+        "partial": { "to": "OPEN_GUARD_TOP" },
+        "fail": { "to": "STANDING" }
+      },
+      "points": 2,
+      "tags": ["judo","gi"],
+      "duration": { "min": 3, "max": 9 }
+    },
+    {
+      "id": "entry.tai_otoshi",
+      "name": "Tai Otoshi",
+      "family": "ENTRY",
+      "from": "STANDING",
+      "prob": { "success": 0.45, "partial": 0.22 },
+      "outcomes": {
+        "success": { "to": "SIDE_CONTROL_TOP" },
+        "partial": { "to": "HALF_GUARD_TOP" },
+        "fail": { "to": "STANDING" }
+      },
+      "points": 2,
+      "tags": ["judo","gi"],
+      "duration": { "min": 3, "max": 8 }
+    },
+    {
+      "id": "entry.harai_goshi",
+      "name": "Harai Goshi",
+      "family": "ENTRY",
+      "from": "STANDING",
+      "prob": { "success": 0.45, "partial": 0.22 },
+      "outcomes": {
+        "success": { "to": "SIDE_CONTROL_TOP" },
+        "partial": { "to": "HALF_GUARD_TOP" },
+        "fail": { "to": "STANDING" }
+      },
+      "points": 2,
+      "tags": ["judo","gi"],
+      "duration": { "min": 3, "max": 9 }
+    },
+    {
+      "id": "entry.o_goshi",
+      "name": "O Goshi",
+      "family": "ENTRY",
+      "from": "STANDING",
+      "prob": { "success": 0.46, "partial": 0.22 },
+      "outcomes": {
+        "success": { "to": "SIDE_CONTROL_TOP" },
+        "partial": { "to": "HALF_GUARD_TOP" },
+        "fail": { "to": "STANDING" }
+      },
+      "points": 2,
+      "tags": ["judo","gi"],
+      "duration": { "min": 3, "max": 8 }
+    },
+    {
+      "id": "entry.tomoe_nage",
+      "name": "Tomoe Nage",
+      "family": "ENTRY",
+      "from": "STANDING",
+      "prob": { "success": 0.43, "partial": 0.22 },
+      "outcomes": {
+        "success": { "to": "MOUNT_TOP" },
+        "partial": { "to": "OPEN_GUARD_TOP" },
+        "fail": { "to": "STANDING" }
+      },
+      "points": 2,
+      "tags": ["judo","sacrifice","gi","nogi"],
+      "duration": { "min": 3, "max": 8 }
+    },
+    {
+      "id": "entry.sumi_gaeshi",
+      "name": "Sumi Gaeshi",
+      "family": "ENTRY",
+      "from": "STANDING",
+      "prob": { "success": 0.42, "partial": 0.24 },
+      "outcomes": {
+        "success": { "to": "HALF_GUARD_TOP" },
+        "partial": { "to": "OPEN_GUARD_TOP" },
+        "fail": { "to": "STANDING" }
+      },
+      "points": 2,
+      "tags": ["judo","sacrifice","gi","nogi"],
+      "duration": { "min": 3, "max": 8 }
+    },
+
+    {
+      "id": "pass.double_under_closed",
+      "name": "Double-Under Pass",
+      "family": "PASS",
+      "from": "CLOSED_GUARD_TOP",
+      "prob": { "success": 0.42, "partial": 0.28 },
+      "outcomes": {
+        "success": { "to": "SIDE_CONTROL_TOP" },
+        "partial": { "to": "KNEE_ON_BELLY_TOP" },
+        "fail": { "to": "CLOSED_GUARD_BOTTOM" }
+      },
+      "points": 3,
+      "tags": ["gi","pressure"],
+      "duration": { "min": 6, "max": 14 }
+    },
+    {
+      "id": "pass.stack_pass_closed",
+      "name": "Single-Leg Stack Pass",
+      "family": "PASS",
+      "from": "CLOSED_GUARD_TOP",
+      "prob": { "success": 0.45, "partial": 0.25 },
+      "outcomes": {
+        "success": { "to": "SIDE_CONTROL_TOP" },
+        "partial": { "to": "OPEN_GUARD_TOP" },
+        "fail": { "to": "CLOSED_GUARD_BOTTOM" }
+      },
+      "points": 3,
+      "tags": ["stack","nogi","gi"],
+      "duration": { "min": 5, "max": 12 }
+    },
+    {
+      "id": "transition.stand_in_guard",
+      "name": "Stand in Guard to Open",
+      "family": "TRANSITION",
+      "from": "CLOSED_GUARD_TOP",
+      "prob": { "success": 0.60, "partial": 0.20 },
+      "outcomes": {
+        "success": { "to": "OPEN_GUARD_TOP" },
+        "partial": { "to": "CLOSED_GUARD_TOP" },
+        "fail": { "to": "CLOSED_GUARD_BOTTOM" }
+      },
+      "points": 0,
+      "tags": ["posture"],
+      "duration": { "min": 2, "max": 6 }
+    },
+    {
+      "id": "submission.ezekiel_closed_top",
+      "name": "Ezekiel from Closed (Top)",
+      "family": "SUBMISSION",
+      "from": "CLOSED_GUARD_TOP",
+      "prob": { "success": 0.22, "partial": 0.25 },
+      "outcomes": {
+        "success": { "to": "END" },
+        "partial": { "to": "CLOSED_GUARD_TOP" },
+        "fail": { "to": "CLOSED_GUARD_BOTTOM" }
+      },
+      "points": 0,
+      "tags": ["gi"],
+      "duration": { "min": 5, "max": 12 }
+    },
+
+    {
+      "id": "pass.leg_drag_open",
+      "name": "Leg Drag",
+      "family": "PASS",
+      "from": "OPEN_GUARD_TOP",
+      "prob": { "success": 0.48, "partial": 0.22 },
+      "outcomes": {
+        "success": { "to": "SIDE_CONTROL_TOP" },
+        "partial": { "to": "KNEE_ON_BELLY_TOP" },
+        "fail": { "to": "OPEN_GUARD_BOTTOM" }
+      },
+      "points": 3,
+      "tags": ["nogi","speed"],
+      "duration": { "min": 4, "max": 10 }
+    },
+    {
+      "id": "pass.toreando_open",
+      "name": "Toreando Pass",
+      "family": "PASS",
+      "from": "OPEN_GUARD_TOP",
+      "prob": { "success": 0.45, "partial": 0.25 },
+      "outcomes": {
+        "success": { "to": "SIDE_CONTROL_TOP" },
+        "partial": { "to": "KNEE_ON_BELLY_TOP" },
+        "fail": { "to": "OPEN_GUARD_BOTTOM" }
+      },
+      "points": 3,
+      "tags": ["speed"],
+      "duration": { "min": 4, "max": 9 }
+    },
+    {
+      "id": "pass.leg_weave_open",
+      "name": "Leg Weave Pass",
+      "family": "PASS",
+      "from": "OPEN_GUARD_TOP",
+      "prob": { "success": 0.46, "partial": 0.24 },
+      "outcomes": {
+        "success": { "to": "SIDE_CONTROL_TOP" },
+        "partial": { "to": "KNEE_ON_BELLY_TOP" },
+        "fail": { "to": "OPEN_GUARD_BOTTOM" }
+      },
+      "points": 3,
+      "tags": ["pressure","gi"],
+      "duration": { "min": 5, "max": 12 }
+    },
+    {
+      "id": "transition.open_stepover_mount",
+      "name": "Open Guard Step-Over to Mount",
+      "family": "TRANSITION",
+      "from": "OPEN_GUARD_TOP",
+      "prob": { "success": 0.40, "partial": 0.25 },
+      "outcomes": {
+        "success": { "to": "MOUNT_TOP" },
+        "partial": { "to": "KNEE_ON_BELLY_TOP" },
+        "fail": { "to": "OPEN_GUARD_BOTTOM" }
+      },
+      "points": 0,
+      "tags": ["system"],
+      "duration": { "min": 3, "max": 8 }
+    },
+    {
+      "id": "submission.ankle_lock_open_top",
+      "name": "Straight Ankle Lock (Top Open Guard)",
+      "family": "SUBMISSION",
+      "from": "OPEN_GUARD_TOP",
+      "prob": { "success": 0.26, "partial": 0.24 },
+      "outcomes": {
+        "success": { "to": "END" },
+        "partial": { "to": "OPEN_GUARD_TOP" },
+        "fail": { "to": "OPEN_GUARD_BOTTOM" }
+      },
+      "points": 0,
+      "tags": ["nogi","leglock"],
+      "duration": { "min": 4, "max": 10 }
+    },
+
+    {
+      "id": "pass.knee_cut_half",
+      "name": "Knee Cut from Half",
+      "family": "PASS",
+      "from": "HALF_GUARD_TOP",
+      "prob": { "success": 0.50, "partial": 0.25 },
+      "outcomes": {
+        "success": { "to": "SIDE_CONTROL_TOP" },
+        "partial": { "to": "KNEE_ON_BELLY_TOP" },
+        "fail": { "to": "HALF_GUARD_BOTTOM" }
+      },
+      "points": 3,
+      "tags": ["pressure"],
+      "duration": { "min": 5, "max": 12 }
+    },
+    {
+      "id": "pass.smash_half",
+      "name": "Smash Pass from Half",
+      "family": "PASS",
+      "from": "HALF_GUARD_TOP",
+      "prob": { "success": 0.45, "partial": 0.30 },
+      "outcomes": {
+        "success": { "to": "SIDE_CONTROL_TOP" },
+        "partial": { "to": "NORTH_SOUTH_TOP" },
+        "fail": { "to": "HALF_GUARD_BOTTOM" }
+      },
+      "points": 3,
+      "tags": ["pressure"],
+      "duration": { "min": 6, "max": 14 }
+    },
+    {
+      "id": "submission.arm_triangle_half",
+      "name": "Arm-Triangle from Half",
+      "family": "SUBMISSION",
+      "from": "HALF_GUARD_TOP",
+      "prob": { "success": 0.27, "partial": 0.28 },
+      "outcomes": {
+        "success": { "to": "END" },
+        "partial": { "to": "SIDE_CONTROL_TOP" },
+        "fail": { "to": "HALF_GUARD_BOTTOM" }
+      },
+      "points": 0,
+      "tags": ["pressure"],
+      "duration": { "min": 6, "max": 14 }
+    },
+    {
+      "id": "submission.kneebar_half_top",
+      "name": "Kneebar from Half (Top)",
+      "family": "SUBMISSION",
+      "from": "HALF_GUARD_TOP",
+      "prob": { "success": 0.22, "partial": 0.26 },
+      "outcomes": {
+        "success": { "to": "END" },
+        "partial": { "to": "HALF_GUARD_TOP" },
+        "fail": { "to": "HALF_GUARD_BOTTOM" }
+      },
+      "points": 0,
+      "tags": ["leglock","nogi"],
+      "duration": { "min": 5, "max": 12 }
+    },
+    {
+      "id": "submission.ezekiel_half_top",
+      "name": "Ezekiel from Half (Top)",
+      "family": "SUBMISSION",
+      "from": "HALF_GUARD_TOP",
+      "prob": { "success": 0.24, "partial": 0.28 },
+      "outcomes": {
+        "success": { "to": "END" },
+        "partial": { "to": "HALF_GUARD_TOP" },
+        "fail": { "to": "HALF_GUARD_BOTTOM" }
+      },
+      "points": 0,
+      "tags": ["gi"],
+      "duration": { "min": 5, "max": 12 }
+    },
+    {
+      "id": "submission.kimura_half_top",
+      "name": "Kimura from Half (Top)",
+      "family": "SUBMISSION",
+      "from": "HALF_GUARD_TOP",
+      "prob": { "success": 0.27, "partial": 0.28 },
+      "outcomes": {
+        "success": { "to": "END" },
+        "partial": { "to": "SIDE_CONTROL_TOP" },
+        "fail": { "to": "HALF_GUARD_BOTTOM" }
+      },
+      "points": 0,
+      "tags": ["gi","nogi"],
+      "duration": { "min": 5, "max": 12 }
+    },
+
+    {
+      "id": "transition.side_to_mount",
+      "name": "Side to Mount",
+      "family": "TRANSITION",
+      "from": "SIDE_CONTROL_TOP",
+      "prob": { "success": 0.60, "partial": 0.20 },
+      "outcomes": {
+        "success": { "to": "MOUNT_TOP" },
+        "partial": { "to": "KNEE_ON_BELLY_TOP" },
+        "fail": { "to": "SIDE_CONTROL_BOTTOM" }
+      },
+      "points": 0,
+      "tags": [],
+      "duration": { "min": 3, "max": 8 }
+    },
+    {
+      "id": "transition.side_to_ns",
+      "name": "Side to North-South",
+      "family": "TRANSITION",
+      "from": "SIDE_CONTROL_TOP",
+      "prob": { "success": 0.65, "partial": 0.15 },
+      "outcomes": {
+        "success": { "to": "NORTH_SOUTH_TOP" },
+        "partial": { "to": "SIDE_CONTROL_TOP" },
+        "fail": { "to": "SIDE_CONTROL_BOTTOM" }
+      },
+      "points": 0,
+      "tags": [],
+      "duration": { "min": 2, "max": 6 }
+    },
+    {
+      "id": "transition.side_giftwrap_back",
+      "name": "Gift Wrap Back Take",
+      "family": "TRANSITION",
+      "from": "SIDE_CONTROL_TOP",
+      "prob": { "success": 0.40, "partial": 0.30 },
+      "outcomes": {
+        "success": { "to": "BACK_CONTROL_TOP" },
+        "partial": { "to": "MOUNT_TOP" },
+        "fail": { "to": "SIDE_CONTROL_BOTTOM" }
+      },
+      "points": 0,
+      "tags": ["kimura","control"],
+      "duration": { "min": 3, "max": 8 }
+    },
+    {
+      "id": "submission.kimura_side",
+      "name": "Kimura from Side",
+      "family": "SUBMISSION",
+      "from": "SIDE_CONTROL_TOP",
+      "prob": { "success": 0.28, "partial": 0.30 },
+      "outcomes": {
+        "success": { "to": "END" },
+        "partial": { "to": "SIDE_CONTROL_TOP" },
+        "fail": { "to": "SIDE_CONTROL_BOTTOM" }
+      },
+      "points": 0,
+      "tags": ["gi","nogi"],
+      "duration": { "min": 5, "max": 12 }
+    },
+    {
+      "id": "submission.darce_side",
+      "name": "D'Arce Choke",
+      "family": "SUBMISSION",
+      "from": "SIDE_CONTROL_TOP",
+      "prob": { "success": 0.27, "partial": 0.28 },
+      "outcomes": {
+        "success": { "to": "END" },
+        "partial": { "to": "SIDE_CONTROL_TOP" },
+        "fail": { "to": "SIDE_CONTROL_BOTTOM" }
+      },
+      "points": 0,
+      "tags": ["nogi"],
+      "duration": { "min": 5, "max": 12 }
+    },
+    {
+      "id": "submission.bread_cutter_side",
+      "name": "Bread Cutter Choke",
+      "family": "SUBMISSION",
+      "from": "SIDE_CONTROL_TOP",
+      "prob": { "success": 0.30, "partial": 0.28 },
+      "outcomes": {
+        "success": { "to": "END" },
+        "partial": { "to": "SIDE_CONTROL_TOP" },
+        "fail": { "to": "SIDE_CONTROL_BOTTOM" }
+      },
+      "points": 0,
+      "tags": ["gi"],
+      "duration": { "min": 5, "max": 12 }
+    },
+    {
+      "id": "submission.crucifix_armbar_side",
+      "name": "Crucifix Armbar (from Side)",
+      "family": "SUBMISSION",
+      "from": "SIDE_CONTROL_TOP",
+      "prob": { "success": 0.26, "partial": 0.28 },
+      "outcomes": {
+        "success": { "to": "END" },
+        "partial": { "to": "SIDE_CONTROL_TOP" },
+        "fail": { "to": "SIDE_CONTROL_BOTTOM" }
+      },
+      "points": 0,
+      "tags": ["nogi","gi"],
+      "duration": { "min": 5, "max": 12 }
+    },
+    {
+      "id": "submission.combat_base_armbar_side",
+      "name": "Combat Base Armbar",
+      "family": "SUBMISSION",
+      "from": "SIDE_CONTROL_TOP",
+      "prob": { "success": 0.27, "partial": 0.28 },
+      "outcomes": {
+        "success": { "to": "END" },
+        "partial": { "to": "SIDE_CONTROL_TOP" },
+        "fail": { "to": "SIDE_CONTROL_BOTTOM" }
+      },
+      "points": 0,
+      "tags": ["nogi","gi"],
+      "duration": { "min": 4, "max": 10 }
+    },
+    {
+      "id": "submission.reverse_triangle_side",
+      "name": "Reverse Triangle from Side",
+      "family": "SUBMISSION",
+      "from": "SIDE_CONTROL_TOP",
+      "prob": { "success": 0.24, "partial": 0.28 },
+      "outcomes": {
+        "success": { "to": "END" },
+        "partial": { "to": "NORTH_SOUTH_TOP" },
+        "fail": { "to": "SIDE_CONTROL_BOTTOM" }
+      },
+      "points": 0,
+      "tags": ["nogi","gi"],
+      "duration": { "min": 5, "max": 12 }
+    },
+
+    {
+      "id": "transition.mount_to_back",
+      "name": "Gift Wrap to Back",
+      "family": "TRANSITION",
+      "from": "MOUNT_TOP",
+      "prob": { "success": 0.45, "partial": 0.25 },
+      "outcomes": {
+        "success": { "to": "BACK_CONTROL_TOP" },
+        "partial": { "to": "MOUNT_TOP" },
+        "fail": { "to": "MOUNT_BOTTOM" }
+      },
+      "points": 0,
+      "tags": ["control"],
+      "duration": { "min": 4, "max": 9 }
+    },
+    {
+      "id": "submission.americana_mount",
+      "name": "Americana from Mount",
+      "family": "SUBMISSION",
+      "from": "MOUNT_TOP",
+      "prob": { "success": 0.35, "partial": 0.25 },
+      "outcomes": {
+        "success": { "to": "END" },
+        "partial": { "to": "MOUNT_TOP" },
+        "fail": { "to": "MOUNT_BOTTOM" }
+      },
+      "points": 0,
+      "tags": ["gi"],
+      "duration": { "min": 5, "max": 12 }
+    },
+    {
+      "id": "submission.cross_collar_mount",
+      "name": "Cross-Collar Choke",
+      "family": "SUBMISSION",
+      "from": "MOUNT_TOP",
+      "prob": { "success": 0.32, "partial": 0.28 },
+      "outcomes": {
+        "success": { "to": "END" },
+        "partial": { "to": "MOUNT_TOP" },
+        "fail": { "to": "MOUNT_BOTTOM" }
+      },
+      "points": 0,
+      "tags": ["gi"],
+      "duration": { "min": 6, "max": 14 }
+    },
+    {
+      "id": "submission.armbar_mount_top",
+      "name": "Armbar from Mount",
+      "family": "SUBMISSION",
+      "from": "MOUNT_TOP",
+      "prob": { "success": 0.34, "partial": 0.28 },
+      "outcomes": {
+        "success": { "to": "END" },
+        "partial": { "to": "MOUNT_TOP" },
+        "fail": { "to": "MOUNT_BOTTOM" }
+      },
+      "points": 0,
+      "tags": ["gi","nogi"],
+      "duration": { "min": 5, "max": 12 }
+    },
+    {
+      "id": "submission.arm_triangle_mount",
+      "name": "Arm-Triangle from Mount",
+      "family": "SUBMISSION",
+      "from": "MOUNT_TOP",
+      "prob": { "success": 0.30, "partial": 0.28 },
+      "outcomes": {
+        "success": { "to": "END" },
+        "partial": { "to": "SIDE_CONTROL_TOP" },
+        "fail": { "to": "MOUNT_BOTTOM" }
+      },
+      "points": 0,
+      "tags": ["pressure"],
+      "duration": { "min": 6, "max": 14 }
+    },
+
+    {
+      "id": "submission.rnc_back",
+      "name": "Rear Naked Choke",
+      "family": "SUBMISSION",
+      "from": "BACK_CONTROL_TOP",
+      "prob": { "success": 0.40, "partial": 0.30 },
+      "outcomes": {
+        "success": { "to": "END" },
+        "partial": { "to": "BACK_CONTROL_TOP" },
+        "fail": { "to": "BACK_CONTROL_BOTTOM" }
+      },
+      "points": 0,
+      "tags": ["nogi"],
+      "duration": { "min": 6, "max": 15 }
+    },
+    {
+      "id": "submission.armbar_back",
+      "name": "Armbar from Back",
+      "family": "SUBMISSION",
+      "from": "BACK_CONTROL_TOP",
+      "prob": { "success": 0.33, "partial": 0.27 },
+      "outcomes": {
+        "success": { "to": "END" },
+        "partial": { "to": "MOUNT_TOP" },
+        "fail": { "to": "BACK_CONTROL_BOTTOM" }
+      },
+      "points": 0,
+      "tags": ["nogi"],
+      "duration": { "min": 6, "max": 12 }
+    },
+    {
+      "id": "submission.bow_and_arrow",
+      "name": "Bow and Arrow",
+      "family": "SUBMISSION",
+      "from": "BACK_CONTROL_TOP",
+      "prob": { "success": 0.35, "partial": 0.28 },
+      "outcomes": {
+        "success": { "to": "END" },
+        "partial": { "to": "BACK_CONTROL_TOP" },
+        "fail": { "to": "BACK_CONTROL_BOTTOM" }
+      },
+      "points": 0,
+      "tags": ["gi"],
+      "duration": { "min": 6, "max": 14 }
+    },
+    {
+      "id": "transition.back_to_mount_chair_sit",
+      "name": "Chair Sit to Mount",
+      "family": "TRANSITION",
+      "from": "BACK_CONTROL_TOP",
+      "prob": { "success": 0.52, "partial": 0.22 },
+      "outcomes": {
+        "success": { "to": "MOUNT_TOP" },
+        "partial": { "to": "BACK_CONTROL_TOP" },
+        "fail": { "to": "BACK_CONTROL_BOTTOM" }
+      },
+      "points": 0,
+      "tags": ["control"],
+      "duration": { "min": 3, "max": 8 }
+    },
+
+    {
+      "id": "transition.turtle_to_back",
+      "name": "Seatbelt to Back",
+      "family": "TRANSITION",
+      "from": "TURTLE_TOP",
+      "prob": { "success": 0.50, "partial": 0.25 },
+      "outcomes": {
+        "success": { "to": "BACK_CONTROL_TOP" },
+        "partial": { "to": "SIDE_CONTROL_TOP" },
+        "fail": { "to": "TURTLE_BOTTOM" }
+      },
+      "points": 0,
+      "tags": ["wrestling"],
+      "duration": { "min": 3, "max": 8 }
+    },
+    {
+      "id": "submission.clock_choke_turtle_top",
+      "name": "Clock Choke",
+      "family": "SUBMISSION",
+      "from": "TURTLE_TOP",
+      "prob": { "success": 0.30, "partial": 0.25 },
+      "outcomes": {
+        "success": { "to": "END" },
+        "partial": { "to": "TURTLE_TOP" },
+        "fail": { "to": "OPEN_GUARD_BOTTOM" }
+      },
+      "points": 0,
+      "tags": ["gi"],
+      "duration": { "min": 5, "max": 12 }
+    },
+
+    {
+      "id": "transition.kob_to_mount",
+      "name": "Knee-on-Belly to Mount",
+      "family": "TRANSITION",
+      "from": "KNEE_ON_BELLY_TOP",
+      "prob": { "success": 0.55, "partial": 0.20 },
+      "outcomes": {
+        "success": { "to": "MOUNT_TOP" },
+        "partial": { "to": "SIDE_CONTROL_TOP" },
+        "fail": { "to": "SIDE_CONTROL_BOTTOM" }
+      },
+      "points": 0,
+      "tags": [],
+      "duration": { "min": 2, "max": 6 }
+    },
+    {
+      "id": "submission.baseball_choke_kob",
+      "name": "Baseball Choke from Knee-on-Belly",
+      "family": "SUBMISSION",
+      "from": "KNEE_ON_BELLY_TOP",
+      "prob": { "success": 0.27, "partial": 0.28 },
+      "outcomes": {
+        "success": { "to": "END" },
+        "partial": { "to": "KNEE_ON_BELLY_TOP" },
+        "fail": { "to": "SIDE_CONTROL_BOTTOM" }
+      },
+      "points": 0,
+      "tags": ["gi"],
+      "duration": { "min": 4, "max": 10 }
+    },
+    {
+      "id": "submission.farside_armbar_kob",
+      "name": "Farside Armbar (Knee-on-Belly)",
+      "family": "SUBMISSION",
+      "from": "KNEE_ON_BELLY_TOP",
+      "prob": { "success": 0.30, "partial": 0.25 },
+      "outcomes": {
+        "success": { "to": "END" },
+        "partial": { "to": "SIDE_CONTROL_TOP" },
+        "fail": { "to": "SIDE_CONTROL_BOTTOM" }
+      },
+      "points": 0,
+      "tags": ["gi","nogi"],
+      "duration": { "min": 4, "max": 10 }
+    },
+
+    {
+      "id": "submission.north_south_choke",
+      "name": "North-South Choke",
+      "family": "SUBMISSION",
+      "from": "NORTH_SOUTH_TOP",
+      "prob": { "success": 0.30, "partial": 0.25 },
+      "outcomes": {
+        "success": { "to": "END" },
+        "partial": { "to": "NORTH_SOUTH_TOP" },
+        "fail": { "to": "SIDE_CONTROL_BOTTOM" }
+      },
+      "points": 0,
+      "tags": ["nogi"],
+      "duration": { "min": 5, "max": 12 }
+    },
+    {
+      "id": "transition.ns_to_side",
+      "name": "North-South to Side",
+      "family": "TRANSITION",
+      "from": "NORTH_SOUTH_TOP",
+      "prob": { "success": 0.70, "partial": 0.15 },
+      "outcomes": {
+        "success": { "to": "SIDE_CONTROL_TOP" },
+        "partial": { "to": "NORTH_SOUTH_TOP" },
+        "fail": { "to": "SIDE_CONTROL_BOTTOM" }
+      },
+      "points": 0,
+      "tags": [],
+      "duration": { "min": 2, "max": 6 }
+    },
+    {
+      "id": "transition.ns_kimura_backtake",
+      "name": "Kimura Grip Back Take",
+      "family": "TRANSITION",
+      "from": "NORTH_SOUTH_TOP",
+      "prob": { "success": 0.42, "partial": 0.28 },
+      "outcomes": {
+        "success": { "to": "BACK_CONTROL_TOP" },
+        "partial": { "to": "SIDE_CONTROL_TOP" },
+        "fail": { "to": "SIDE_CONTROL_BOTTOM" }
+      },
+      "points": 0,
+      "tags": ["kimura"],
+      "duration": { "min": 3, "max": 8 }
+    },
+
+    {
+      "id": "sweep.scissor",
+      "name": "Scissor Sweep",
+      "family": "SWEEP",
+      "from": "CLOSED_GUARD_BOTTOM",
+      "prob": { "success": 0.40, "partial": 0.25 },
+      "outcomes": {
+        "success": { "to": "MOUNT_TOP" },
+        "partial": { "to": "HALF_GUARD_TOP" },
+        "fail": { "to": "CLOSED_GUARD_BOTTOM" }
+      },
+      "points": 2,
+      "tags": ["classic"],
+      "duration": { "min": 4, "max": 10 }
+    },
+    {
+      "id": "sweep.hip_bump",
+      "name": "Hip Bump Sweep",
+      "family": "SWEEP",
+      "from": "CLOSED_GUARD_BOTTOM",
+      "prob": { "success": 0.38, "partial": 0.22 },
+      "outcomes": {
+        "success": { "to": "MOUNT_TOP" },
+        "partial": { "to": "OPEN_GUARD_BOTTOM" },
+        "fail": { "to": "CLOSED_GUARD_BOTTOM" }
+      },
+      "points": 2,
+      "tags": [],
+      "duration": { "min": 3, "max": 8 }
+    },
+    {
+      "id": "submission.armbar_guard",
+      "name": "Armbar from Guard",
+      "family": "SUBMISSION",
+      "from": "CLOSED_GUARD_BOTTOM",
+      "prob": { "success": 0.25, "partial": 0.30 },
+      "outcomes": {
+        "success": { "to": "END" },
+        "partial": { "to": "OPEN_GUARD_BOTTOM" },
+        "fail": { "to": "SIDE_CONTROL_BOTTOM" }
+      },
+      "points": 0,
+      "tags": [],
+      "duration": { "min": 5, "max": 12 }
+    },
+    {
+      "id": "submission.triangle_guard",
+      "name": "Triangle from Guard",
+      "family": "SUBMISSION",
+      "from": "CLOSED_GUARD_BOTTOM",
+      "prob": { "success": 0.28, "partial": 0.27 },
+      "outcomes": {
+        "success": { "to": "END" },
+        "partial": { "to": "OPEN_GUARD_BOTTOM" },
+        "fail": { "to": "SIDE_CONTROL_BOTTOM" }
+      },
+      "points": 0,
+      "tags": ["nogi","gi"],
+      "duration": { "min": 5, "max": 12 }
+    },
+    {
+      "id": "submission.cross_choke_closed_bottom",
+      "name": "Cross-Collar from Closed",
+      "family": "SUBMISSION",
+      "from": "CLOSED_GUARD_BOTTOM",
+      "prob": { "success": 0.24, "partial": 0.30 },
+      "outcomes": {
+        "success": { "to": "END" },
+        "partial": { "to": "OPEN_GUARD_BOTTOM" },
+        "fail": { "to": "SIDE_CONTROL_BOTTOM" }
+      },
+      "points": 0,
+      "tags": ["gi"],
+      "duration": { "min": 5, "max": 12 }
+    },
+    {
+      "id": "sweep.pendulum_guard",
+      "name": "Pendulum Sweep",
+      "family": "SWEEP",
+      "from": "CLOSED_GUARD_BOTTOM",
+      "prob": { "success": 0.40, "partial": 0.24 },
+      "outcomes": {
+        "success": { "to": "MOUNT_TOP" },
+        "partial": { "to": "HALF_GUARD_TOP" },
+        "fail": { "to": "CLOSED_GUARD_BOTTOM" }
+      },
+      "points": 2,
+      "tags": ["classic"],
+      "duration": { "min": 4, "max": 9 }
+    },
+
+    {
+      "id": "sweep.tripod",
+      "name": "Tripod Sweep",
+      "family": "SWEEP",
+      "from": "OPEN_GUARD_BOTTOM",
+      "prob": { "success": 0.42, "partial": 0.25 },
+      "outcomes": {
+        "success": { "to": "OPEN_GUARD_TOP" },
+        "partial": { "to": "CLOSED_GUARD_BOTTOM" },
+        "fail": { "to": "OPEN_GUARD_BOTTOM" }
+      },
+      "points": 2,
+      "tags": ["nogi"],
+      "duration": { "min": 3, "max": 8 }
+    },
+    {
+      "id": "sweep.technical_standup",
+      "name": "Technical Stand-Up to Single",
+      "family": "SWEEP",
+      "from": "OPEN_GUARD_BOTTOM",
+      "prob": { "success": 0.36, "partial": 0.28 },
+      "outcomes": {
+        "success": { "to": "OPEN_GUARD_TOP" },
+        "partial": { "to": "STANDING" },
+        "fail": { "to": "OPEN_GUARD_BOTTOM" }
+      },
+      "points": 2,
+      "tags": ["wrestling"],
+      "duration": { "min": 3, "max": 8 }
+    },
+    {
+      "id": "sweep.sickle_open",
+      "name": "Sickle Sweep",
+      "family": "SWEEP",
+      "from": "OPEN_GUARD_BOTTOM",
+      "prob": { "success": 0.40, "partial": 0.24 },
+      "outcomes": {
+        "success": { "to": "OPEN_GUARD_TOP" },
+        "partial": { "to": "CLOSED_GUARD_BOTTOM" },
+        "fail": { "to": "OPEN_GUARD_BOTTOM" }
+      },
+      "points": 2,
+      "tags": ["lasso","gi"],
+      "duration": { "min": 3, "max": 8 }
+    },
+    {
+      "id": "sweep.hook_butterfly",
+      "name": "Butterfly Hook Sweep",
+      "family": "SWEEP",
+      "from": "OPEN_GUARD_BOTTOM",
+      "prob": { "success": 0.42, "partial": 0.26 },
+      "outcomes": {
+        "success": { "to": "OPEN_GUARD_TOP" },
+        "partial": { "to": "OPEN_GUARD_BOTTOM" },
+        "fail": { "to": "OPEN_GUARD_BOTTOM" }
+      },
+      "points": 2,
+      "tags": ["butterfly","nogi"],
+      "duration": { "min": 3, "max": 8 }
+    },
+    {
+      "id": "submission.omoplata_open",
+      "name": "Omoplata",
+      "family": "SUBMISSION",
+      "from": "OPEN_GUARD_BOTTOM",
+      "prob": { "success": 0.26, "partial": 0.30 },
+      "outcomes": {
+        "success": { "to": "END" },
+        "partial": { "to": "OPEN_GUARD_BOTTOM" },
+        "fail": { "to": "SIDE_CONTROL_BOTTOM" }
+      },
+      "points": 0,
+      "tags": ["gi","nogi"],
+      "duration": { "min": 5, "max": 12 }
+    },
+    {
+      "id": "submission.triangle_open",
+      "name": "Triangle from Open Guard",
+      "family": "SUBMISSION",
+      "from": "OPEN_GUARD_BOTTOM",
+      "prob": { "success": 0.26, "partial": 0.28 },
+      "outcomes": {
+        "success": { "to": "END" },
+        "partial": { "to": "OPEN_GUARD_BOTTOM" },
+        "fail": { "to": "SIDE_CONTROL_BOTTOM" }
+      },
+      "points": 0,
+      "tags": ["nogi","gi"],
+      "duration": { "min": 5, "max": 12 }
+    },
+    {
+      "id": "submission.ankle_lock_slx_bottom",
+      "name": "Straight Ankle Lock (Bottom SLX)",
+      "family": "SUBMISSION",
+      "from": "OPEN_GUARD_BOTTOM",
+      "prob": { "success": 0.27, "partial": 0.28 },
+      "outcomes": {
+        "success": { "to": "END" },
+        "partial": { "to": "OPEN_GUARD_BOTTOM" },
+        "fail": { "to": "SIDE_CONTROL_BOTTOM" }
+      },
+      "points": 0,
+      "tags": ["leglock","nogi"],
+      "duration": { "min": 4, "max": 10 }
+    },
+
+    {
+      "id": "sweep.old_school_half",
+      "name": "Old School Sweep",
+      "family": "SWEEP",
+      "from": "HALF_GUARD_BOTTOM",
+      "prob": { "success": 0.36, "partial": 0.28 },
+      "outcomes": {
+        "success": { "to": "HALF_GUARD_TOP" },
+        "partial": { "to": "OPEN_GUARD_BOTTOM" },
+        "fail": { "to": "HALF_GUARD_BOTTOM" }
+      },
+      "points": 2,
+      "tags": ["lockdown"],
+      "duration": { "min": 4, "max": 10 }
+    },
+    {
+      "id": "sweep.deep_half_backdoor",
+      "name": "Deep Half Back Door",
+      "family": "SWEEP",
+      "from": "HALF_GUARD_BOTTOM",
+      "prob": { "success": 0.30, "partial": 0.28 },
+      "outcomes": {
+        "success": { "to": "BACK_CONTROL_TOP" },
+        "partial": { "to": "HALF_GUARD_TOP" },
+        "fail": { "to": "HALF_GUARD_BOTTOM" }
+      },
+      "points": 2,
+      "tags": ["deep_half"],
+      "duration": { "min": 4, "max": 10 }
+    },
+    {
+      "id": "escape.half_reguard",
+      "name": "Half Guard Reguard",
+      "family": "ESCAPE",
+      "from": "HALF_GUARD_BOTTOM",
+      "prob": { "success": 0.44, "partial": 0.26 },
+      "outcomes": {
+        "success": { "to": "CLOSED_GUARD_BOTTOM" },
+        "partial": { "to": "OPEN_GUARD_BOTTOM" },
+        "fail": { "to": "HALF_GUARD_BOTTOM" }
+      },
+      "points": 0,
+      "tags": [],
+      "duration": { "min": 3, "max": 8 }
+    },
+    {
+      "id": "submission.kimura_half_bottom",
+      "name": "Kimura from Half (Bottom)",
+      "family": "SUBMISSION",
+      "from": "HALF_GUARD_BOTTOM",
+      "prob": { "success": 0.22, "partial": 0.28 },
+      "outcomes": {
+        "success": { "to": "END" },
+        "partial": { "to": "OPEN_GUARD_BOTTOM" },
+        "fail": { "to": "HALF_GUARD_BOTTOM" }
+      },
+      "points": 0,
+      "tags": ["gi","nogi"],
+      "duration": { "min": 5, "max": 12 }
+    },
+
+    {
+      "id": "escape.side_shrimp",
+      "name": "Shrimp to Guard",
+      "family": "ESCAPE",
+      "from": "SIDE_CONTROL_BOTTOM",
+      "prob": { "success": 0.45, "partial": 0.25 },
+      "outcomes": {
+        "success": { "to": "OPEN_GUARD_BOTTOM" },
+        "partial": { "to": "HALF_GUARD_BOTTOM" },
+        "fail": { "to": "SIDE_CONTROL_BOTTOM" }
+      },
+      "points": 0,
+      "tags": [],
+      "duration": { "min": 3, "max": 8 }
+    },
+    {
+      "id": "escape.side_bridge",
+      "name": "Bridge and Frame",
+      "family": "ESCAPE",
+      "from": "SIDE_CONTROL_BOTTOM",
+      "prob": { "success": 0.35, "partial": 0.30 },
+      "outcomes": {
+        "success": { "to": "TURTLE_BOTTOM" },
+        "partial": { "to": "HALF_GUARD_BOTTOM" },
+        "fail": { "to": "SIDE_CONTROL_BOTTOM" }
+      },
+      "points": 0,
+      "tags": ["wrestling"],
+      "duration": { "min": 3, "max": 8 }
+    },
+    {
+      "id": "submission.buggy_choke_side_bottom",
+      "name": "Buggy Choke",
+      "family": "SUBMISSION",
+      "from": "SIDE_CONTROL_BOTTOM",
+      "prob": { "success": 0.12, "partial": 0.18 },
+      "outcomes": {
+        "success": { "to": "END" },
+        "partial": { "to": "OPEN_GUARD_BOTTOM" },
+        "fail": { "to": "SIDE_CONTROL_BOTTOM" }
+      },
+      "points": 0,
+      "tags": ["nogi","unorthodox"],
+      "duration": { "min": 5, "max": 12 }
+    },
+
+    {
+      "id": "escape.mount_upa",
+      "name": "Upa Escape",
+      "family": "ESCAPE",
+      "from": "MOUNT_BOTTOM",
+      "prob": { "success": 0.35, "partial": 0.25 },
+      "outcomes": {
+        "success": { "to": "CLOSED_GUARD_TOP" },
+        "partial": { "to": "HALF_GUARD_BOTTOM" },
+        "fail": { "to": "MOUNT_BOTTOM" }
+      },
+      "points": 0,
+      "tags": [],
+      "duration": { "min": 4, "max": 9 }
+    },
+    {
+      "id": "escape.mount_knee_elbow",
+      "name": "Knee-Elbow Escape",
+      "family": "ESCAPE",
+      "from": "MOUNT_BOTTOM",
+      "prob": { "success": 0.40, "partial": 0.25 },
+      "outcomes": {
+        "success": { "to": "HALF_GUARD_BOTTOM" },
+        "partial": { "to": "OPEN_GUARD_BOTTOM" },
+        "fail": { "to": "MOUNT_BOTTOM" }
+      },
+      "points": 0,
+      "tags": [],
+      "duration": { "min": 4, "max": 9 }
+    },
+    {
+      "id": "submission.ezekiel_mount_bottom",
+      "name": "Ezekiel from Bottom Mount",
+      "family": "SUBMISSION",
+      "from": "MOUNT_BOTTOM",
+      "prob": { "success": 0.15, "partial": 0.22 },
+      "outcomes": {
+        "success": { "to": "END" },
+        "partial": { "to": "HALF_GUARD_BOTTOM" },
+        "fail": { "to": "MOUNT_BOTTOM" }
+      },
+      "points": 0,
+      "tags": ["gi"],
+      "duration": { "min": 5, "max": 12 }
+    },
+
+    {
+      "id": "escape.back_two_on_one",
+      "name": "Back Escape Two-on-One",
+      "family": "ESCAPE",
+      "from": "BACK_CONTROL_BOTTOM",
+      "prob": { "success": 0.30, "partial": 0.30 },
+      "outcomes": {
+        "success": { "to": "TURTLE_BOTTOM" },
+        "partial": { "to": "SIDE_CONTROL_BOTTOM" },
+        "fail": { "to": "BACK_CONTROL_BOTTOM" }
+      },
+      "points": 0,
+      "tags": ["critical"],
+      "duration": { "min": 6, "max": 14 }
+    },
+    {
+      "id": "sweep.back_shoulder_roll",
+      "name": "Back Shoulder-Roll Reversal",
+      "family": "SWEEP",
+      "from": "BACK_CONTROL_BOTTOM",
+      "prob": { "success": 0.18, "partial": 0.22 },
+      "outcomes": {
+        "success": { "to": "HALF_GUARD_TOP" },
+        "partial": { "to": "TURTLE_BOTTOM" },
+        "fail": { "to": "BACK_CONTROL_BOTTOM" }
+      },
+      "points": 2,
+      "tags": ["scramble"],
+      "duration": { "min": 4, "max": 10 }
+    },
+
+    {
+      "id": "escape.turtle_granby",
+      "name": "Granby Roll",
+      "family": "ESCAPE",
+      "from": "TURTLE_BOTTOM",
+      "prob": { "success": 0.40, "partial": 0.30 },
+      "outcomes": {
+        "success": { "to": "OPEN_GUARD_BOTTOM" },
+        "partial": { "to": "SIDE_CONTROL_BOTTOM" },
+        "fail": { "to": "TURTLE_BOTTOM" }
+      },
+      "points": 0,
+      "tags": ["wrestling"],
+      "duration": { "min": 3, "max": 8 }
+    },
+    {
+      "id": "sweep.turtle_sitout_single",
+      "name": "Sit-Out to Single",
+      "family": "SWEEP",
+      "from": "TURTLE_BOTTOM",
+      "prob": { "success": 0.24, "partial": 0.30 },
+      "outcomes": {
+        "success": { "to": "OPEN_GUARD_TOP" },
+        "partial": { "to": "OPEN_GUARD_BOTTOM" },
+        "fail": { "to": "TURTLE_BOTTOM" }
+      },
+      "points": 2,
+      "tags": ["wrestling"],
+      "duration": { "min": 3, "max": 8 }
+    },
+    {
+      "id": "submission.kimura_trap_turtle",
+      "name": "Kimura Trap from Turtle",
+      "family": "SUBMISSION",
+      "from": "TURTLE_BOTTOM",
+      "prob": { "success": 0.20, "partial": 0.25 },
+      "outcomes": {
+        "success": { "to": "END" },
+        "partial": { "to": "OPEN_GUARD_BOTTOM" },
+        "fail": { "to": "TURTLE_BOTTOM" }
+      },
+      "points": 0,
+      "tags": ["gi","nogi"],
+      "duration": { "min": 4, "max": 10 }
+    },
+
+    {
+      "id": "escape.kob_shrimp",
+      "name": "Knee-on-Belly Shrimp",
+      "family": "ESCAPE",
+      "from": "KNEE_ON_BELLY_BOTTOM",
+      "prob": { "success": 0.40, "partial": 0.25 },
+      "outcomes": {
+        "success": { "to": "HALF_GUARD_BOTTOM" },
+        "partial": { "to": "SIDE_CONTROL_BOTTOM" },
+        "fail": { "to": "KNEE_ON_BELLY_BOTTOM" }
+      },
+      "points": 0,
+      "tags": [],
+      "duration": { "min": 2, "max": 6 }
+    },
+    {
+      "id": "sweep.kob_bump_single",
+      "name": "KOB Bump to Single",
+      "family": "SWEEP",
+      "from": "KNEE_ON_BELLY_BOTTOM",
+      "prob": { "success": 0.22, "partial": 0.28 },
+      "outcomes": {
+        "success": { "to": "OPEN_GUARD_TOP" },
+        "partial": { "to": "HALF_GUARD_BOTTOM" },
+        "fail": { "to": "KNEE_ON_BELLY_BOTTOM" }
+      },
+      "points": 2,
+      "tags": ["wrestling"],
+      "duration": { "min": 3, "max": 8 }
+    },
+
+    {
+      "id": "escape.ns_shrimp",
+      "name": "North-South Shrimp to Guard",
+      "family": "ESCAPE",
+      "from": "NORTH_SOUTH_BOTTOM",
+      "prob": { "success": 0.42, "partial": 0.28 },
+      "outcomes": {
+        "success": { "to": "OPEN_GUARD_BOTTOM" },
+        "partial": { "to": "SIDE_CONTROL_BOTTOM" },
+        "fail": { "to": "NORTH_SOUTH_BOTTOM" }
+      },
+      "points": 0,
+      "tags": [],
+      "duration": { "min": 3, "max": 8 }
+    },
+    {
+      "id": "sweep.ns_tilt",
+      "name": "North-South Bridge Tilt",
+      "family": "SWEEP",
+      "from": "NORTH_SOUTH_BOTTOM",
+      "prob": { "success": 0.28, "partial": 0.25 },
+      "outcomes": {
+        "success": { "to": "HALF_GUARD_TOP" },
+        "partial": { "to": "OPEN_GUARD_BOTTOM" },
+        "fail": { "to": "NORTH_SOUTH_BOTTOM" }
+      },
+      "points": 2,
+      "tags": ["scramble"],
+      "duration": { "min": 4, "max": 10 }
+    }
+  ]
+}
